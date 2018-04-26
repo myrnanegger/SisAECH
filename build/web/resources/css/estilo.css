@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/03/2018, 10:26:13 AM
+    Author     : Ing. Myrna Romero <myrna.romero@uabc.edu.mx>
+*/
+:root{
+    background-color: rgb(63, 63, 63);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vw auto 10vw;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+#header{
+    /*border-bottom: 2px solid rgb(255, 255, 255);*/
+    grid-area: header;
+}
+#cuerpo{
+    color: rgb(255, 255, 255);
+    grid-area: main;
+}
+#footer{
+    background-color: rgb(8, 8, 8);
+    grid-area: footer;
+}
+#loginBox{
+    margin: 0 auto;
+}
+/*INI BUTTON*/
+.btn{
+    display: block;
+    width: 120px;
+    height: 30px;
+    background: var(--btn-color, black) var(--btn-bg) no-repeat;
+    color: #FFF;
+    text-decoration: none;
+}
+.btn span{
+    position: absolute;
+	top: -999em;
+}
+.btn:hover{
+    cursor: pointer;
+    background-position: 0 -30px;
+}
+.btn.vrd{
+    --btn-color: green;
+    --btn-bg: url("../img/btnAceptar.png");
+}
+.btn.rjo{
+    --btn-color: red;
+    --btn-bg: url("../img/btnCancelar.png");
+}
+.btn.azl{
+    --btn-color: blue;
+    --btn-bg: url("../img/btnLimpiar.png");
+}
+/*END BUTTON*/
+/*INI ESTILO TABLAS*/
+.txtLeft{
+    text-align: left;
+}
+.txtRight{
+    text-align: right;
+    font-weight: bold;
+}
+/*END ESTILO TABLAS*/
+/*INI ESTILO MENSAJES*/
+.msgExito{
+    background-color: #8FB339;
+    color: #4B5842;
+    font-weight: bold;
+}
+.msgError{
+    background-color: #621B00;
+    color: #2F1000;    
+}
+.msgOrd{
+    background-color: #00A8E8;
+    color: #003459;
+}
+/*END ESTILO MENSAJES*/
+.solEq{
+    text-align: center;
+    font-size: 8pt;
+    color: lightslategray;
+    vertical-align: text-top;
+}
