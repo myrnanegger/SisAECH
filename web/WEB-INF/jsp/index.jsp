@@ -11,35 +11,40 @@
         <title>UABC :: Inicio Sesión</title>
     </head>
     <body>
-        <div id="loginBox">
-            <form action="selector.htm" method="POST">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Usuario:</td>
-                            <td><input type="text" id="lbUsr" /></td>
-                        </tr>
-                        <tr>
-                            <td>Contraseña:</td>
-                            <td><input type="password" id="lbClv" /></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="submit" id="btnSubmit"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="registro.jsp">Registrarse</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
+        <div id="container">
+            <div id="header">
+                
+            </div>
+            <div id="cuerpo">
+                <div id="loginBox">
+                    <form action="selector.htm" method="POST">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Usuario:</td>
+                                    <td><input type="text" id="lbUsr" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Contraseña:</td>
+                                    <td><input type="password" id="lbClv" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="submit" id="btnSubmit" value="Acceder"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                
+            </div>
         </div>
     </body>
 </html>

@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Ing. Myrna Romero <myrna.romero@uabc.edu.mx>
 */
 :root{
-    background-color: rgb(63, 63, 63);
+    background-color: #FFF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
@@ -25,9 +25,11 @@ and open the template in the editor.
 #header{
     /*border-bottom: 2px solid rgb(255, 255, 255);*/
     grid-area: header;
+    background: url("../img/header.png") no-repeat center;
+    height: 100px;
 }
 #cuerpo{
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);*/
     grid-area: main;
 }
 #footer{
@@ -35,7 +37,10 @@ and open the template in the editor.
     grid-area: footer;
 }
 #loginBox{
+    border-radius: 2px;
+    box-shadow: 0 0 30px 1px #878787;
     margin: 0 auto;
+    width: 300px;
 }
 /*INI BUTTON*/
 .btn{
