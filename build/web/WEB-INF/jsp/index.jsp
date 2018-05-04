@@ -13,7 +13,8 @@
     <body>
         <div id="container">
             <div id="header">
-                
+                <p style="padding-top: 40px;color: #FFF">UNIVERSIDAD AUT&Oacute;NOMA DE BAJA CALIFORNIA</p>
+                <p style="padding-top: 20px;color: #000;text-align: right;">Sistema de Acreditaciones y Equivalencias</p>
             </div>
             <div id="cuerpo">
                 <div id="loginBox">
@@ -21,19 +22,13 @@
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>Usuario:</td>
-                                    <td><input type="text" id="lbUsr" /></td>
+                                    <td><input type="text" id="lbUsr" placeholder="Usuario"/>@uabc.edu.mx</td>
                                 </tr>
                                 <tr>
-                                    <td>Contraseña:</td>
-                                    <td><input type="password" id="lbClv" /></td>
+                                    <td><input type="password" id="lbClv" placeholder="Contrase&ntilde;a"/></td>
                                 </tr>
-                            </tbody>
-                        </table>
-                        <table>
-                            <tbody>
                                 <tr>
-                                    <td>
+                                    <td style="text-align: center;">
                                         <input type="submit" id="btnSubmit" value="Acceder"/>
                                     </td>
                                 </tr>
@@ -41,9 +36,14 @@
                         </table>
                     </form>
                 </div>
+                <div>
+                    <!-- Información de departamentos nivel estatal -->
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
             <div id="footer">
-                
+                &reg; UABC 2018
             </div>
         </div>
     </body>
