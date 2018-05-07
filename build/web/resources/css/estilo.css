@@ -8,12 +8,11 @@ and open the template in the editor.
     Author     : Ing. Myrna Romero <myrna.romero@uabc.edu.mx>
 */
 :root{
-    background-color: #FFF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
 
-.contenedor{
+/*.contenedor{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 10vw auto 10vw;
@@ -21,30 +20,29 @@ and open the template in the editor.
         "header"
         "main"
         "footer";
-}
+}*/
 #header{
-    /*border-bottom: 2px solid rgb(255, 255, 255);*/
-    grid-area: header;
-    background: url("../img/EscudoTC.svg") no-repeat left,url("../img/header.png") no-repeat center;
-    background-size: 150px auto, 100% 96px; 
+    /*grid-area: header;*/
+    background: url("../img/EscudoTC.svg") no-repeat left,url("../img/header.png") no-repeat top;
+    background-size: 150px auto, 100% 96px;/*contain, cover*/
     height: 150px;
     padding-left: 160px;
 }
 #cuerpo{
     /*color: rgb(255, 255, 255);*/
-    grid-area: main;
+    /*grid-area: main;*/
     margin-top: 100px;
 }
 #footer{
-    grid-area: footer;
-    position: absolute;
+    /*grid-area: footer;*/
+    text-align: right;
 }
 #loginBox{
     border-radius: 2px;
     box-shadow: 0 0 30px 1px #878787;
     margin: 0 auto;
     padding: 20px 20px 20px 20px;
-    width: 300px;
+    width: 350px;
 }
 /*INI BUTTON*/
 .btn{
@@ -105,4 +103,18 @@ and open the template in the editor.
     font-size: 8pt;
     color: lightslategray;
     vertical-align: text-top;
+}
+.dot{
+    background-image: url("../img/lapiz.png");
+    background-size: contain;
+    border: solid 2px #8FB339;
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.sombra{
+    box-shadow: 0 0 30px 1px #878787;
 }

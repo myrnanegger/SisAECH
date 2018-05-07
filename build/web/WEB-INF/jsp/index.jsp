@@ -8,13 +8,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="<c:url value="/resources/js/jquery-3.3.1.min.js"/>"></script>
         <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/estilo.css"/>"/>
+        <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap.min.css"/>"/>
+        <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
         <title>UABC :: Inicio Sesión</title>
     </head>
     <body>
-        <div id="container">
-            <div id="header">
-                <p style="padding-top: 40px;color: #FFF">UNIVERSIDAD AUT&Oacute;NOMA DE BAJA CALIFORNIA</p>
-                <p style="padding-top: 20px;color: #000;text-align: right;">Sistema de Acreditaciones y Equivalencias</p>
+        <div id="contenedor">
+            <div id="header" class="sticky-top">
+                <p style="padding-top: 10px;color: #FFF">UNIVERSIDAD AUT&Oacute;NOMA DE BAJA CALIFORNIA</p>
+                <p style="padding: 10px 10px 0 0;color: #000;">Sistema de Acreditaciones y Equivalencias</p>
             </div>
             <div id="cuerpo">
                 <div id="loginBox">
@@ -22,10 +24,10 @@
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><input type="text" id="lbUsr" placeholder="Usuario"/>@uabc.edu.mx</td>
+                                    <td><input type="text" id="lbUsr" placeholder="Usuario" required/>@uabc.edu.mx</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="password" id="lbClv" placeholder="Contrase&ntilde;a"/></td>
+                                    <td><input type="password" id="lbClv" placeholder="Contrase&ntilde;a" required/></td>
                                 </tr>
                                 <tr>
                                     <td style="text-align: center;">
@@ -36,14 +38,42 @@
                         </table>
                     </form>
                 </div>
+                <br><br>
                 <div>
-                    <!-- Información de departamentos nivel estatal -->
+                    <table style="margin: 0 auto;">
+                        <tbody>
+                            <tr style="font-size: 8pt;" >
+                                <td style="text-align: center;" >
+                                    <b>MEXICALI</b><br>
+                                    Departamento de Servicios Estudiantiles y Gestión Escolar<br>
+                                    Departamento de Información Académica<br>
+                                    Teléfono: (686) 841 8200 Ext. 43201 ó 43202<br>
+                                    Correo electrónico: escolarmxl@uabc.edu.mx
+                                </td>
+                                <td style="width:20px;"></td>
+                                <td style="text-align: center;">
+                                    <b>MEXICALI</b><br>
+                                    Departamento de Servicios Estudiantiles y Gestión Escolar<br>
+                                    Departamento de Información Académica<br>
+                                    Teléfono: (686) 841 8200 Ext. 43201 ó 43202<br>
+                                    Correo electrónico: escolarmxl@uabc.edu.mx
+                                </td>
+                                <td style="width:20px;"></td>
+                                <td style="text-align: center;">
+                                    <b>MEXICALI</b><br>
+                                    Departamento de Servicios Estudiantiles y Gestión Escolar<br>
+                                    Departamento de Información Académica<br>
+                                    Teléfono: (686) 841 8200 Ext. 43201 ó 43202<br>
+                                    Correo electrónico: escolarmxl@uabc.edu.mx
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                
             </div>
-            <div id="footer">
-                &reg; UABC 2018
+            <div class="fixed-bottom" style="cursor: default;">
+                &copy; UABC 2018
             </div>
         </div>
     </body>
