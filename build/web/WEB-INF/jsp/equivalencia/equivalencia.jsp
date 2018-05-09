@@ -19,7 +19,7 @@
     <body>
         <div>
             <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="<c:url value="../selector.htm"/>">
                     <img src="https://llave.uabc.edu.mx/images/logo.png" height="30" class="d-inline-block align-top" alt="">
                     EQUIVALENCIA
                 </a>
@@ -35,7 +35,7 @@
                             <a class="nav-link" href="#">Generar Proceso</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Eliminar equivalencia</a>
+                            <a class="nav-link" href="eqv_eliminar.htm">Eliminar equivalencia</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Reporte de solicitudes</a>
@@ -74,7 +74,7 @@
                             <td class="solEq">Nombre(s)</td><td class="solEq">A. Paterno</td><td class="solEq">A. Materno</td>
                         </tr>
                         <tr>
-                            <td><input type="date"></td><td><input type="text"></td><td><input type="text"></td>
+                            <td><input type="date" style="border: solid 1px lightgrey;"></td><td><input type="text"></td><td><input type="text"></td>
                         </tr>
                         <tr>
                             <td class="solEq">Fecha de nacimiento</td><td class="solEq">Cd. Nacimiento</td><td class="solEq">Edo. Nacimiento</td>
@@ -114,10 +114,16 @@
                             <td class="solEq">Calle</td><td class="solEq">N&uacute;mero</td><td class="solEq">Colonia</td>
                         </tr>
                         <tr>
-                            <td><input type="text" placeholder="Estado"></td><td><input type="text" placeholder="Municipio"></td><td><input type="text" placeholder="Pais"></td>
+                            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
                         </tr>
                         <tr>
-                            <td><input type="number" placeholder="Código Postal"></td><td><input type="number" placeholder="Lada" pattern="[0-9]{3}"></td><td><input type="number" placeholder="Telefono"></td>
+                            <td class="solEq">Estado</td><td class="solEq">Municipio</td><td class="solEq">Pa&iacute;s</td>
+                        </tr>
+                        <tr>
+                            <td><input type="number"></td><td><input type="number" pattern="[0-9]{3}"></td><td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td class="solEq">C&oacute;digo Postal</td><td class="solEq">Lada</td><td class="solEq">Tel&eacute;fono</td>
                         </tr>
                     </tbody>
                     <tr style="height: 40px;"></tr>
@@ -126,16 +132,16 @@
                             <td colspan="3" class="msgExito">Información Acad&eacute;mica</td>
                         </tr>
                         <tr>
-                            <td>Procedencia</td><td></td><td>Destino</td>
+                            <td></td><td>Procedencia</td><td>Destino</td>
                         </tr>
                         <tr>
-                            <td><input type="text" placeholder="Institución"></td><td></td><td><input type="text" placeholder="Unidad"></td>
+                            <td><input type="text"/></td><td><input type="text" placeholder="Institución"></td><td><input type="text" placeholder="Unidad"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" placeholder="Unidad"></td><td></td><td><input type="text" placeholder="Programa de Estudios"></td>
+                            <td></td><td><input type="text" placeholder="Unidad"></td><td><input type="text" placeholder="Programa de Estudios"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" placeholder="Programa de Estudios"></td><td></td><td><input type="text" placeholder="Plan de Estudios"></td>
+                            <td></td><td><input type="text" placeholder="Programa de Estudios"></td><td><input type="text" placeholder="Plan de Estudios"></td>
                         </tr>
                     </tbody>
                     <tr style="height: 40px;"></tr>

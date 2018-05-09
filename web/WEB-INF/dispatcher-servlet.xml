@@ -22,6 +22,7 @@
                 <prop key="index.htm">indexController</prop>
                 <prop key="selector.htm">selectorController</prop>
                 <prop key="equivalencia/equivalencia.htm">equivalenciaController</prop>
+                <prop key="equivalencia/eqv_eliminar.htm">eqvEliminarController</prop>
             </props>
         </property>
     </bean>
@@ -30,7 +31,6 @@
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />
-
     <!--
     The index controller.
     -->
@@ -43,4 +43,7 @@
     <bean name="equivalenciaController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="equivalencia/equivalencia" />
+    <bean name="eqvEliminarController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="equivalencia/eqv_eliminar" />
 </beans>

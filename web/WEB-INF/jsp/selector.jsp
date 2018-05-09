@@ -27,15 +27,15 @@
             </div>
             <div id="cuerpo">
                 <div class="row">
-                    <div id="iconos" class="col-12 col-md-8">
-                        <table style="margin: 0 auto;" class="sombra">
+                    <div id="iconos" class="col-6">
+                        <table style="text-align: center;margin: 0 auto;border-radius: 5px;" class="sombra">
                             <tbody>
                                 <tr>
-                                    <td><span class="dot"></span></td>
-                                    <td><a href="equivalencia/equivalencia.htm"><span class="dot"></span></a></td>
-                                    <td><span class="dot"></span></td>
-                                    <td><span class="dot"></span></td>
-                                    <td><span class="dot"></span></td>
+                                    <td><span class="dot icon-ac"></span></td>
+                                    <td><a href="equivalencia/equivalencia.htm"><span class="dot icon-eq"></span></a></td>
+                                    <td><span class="dot icon-ac"></span></td>
+                                    <td><span class="dot icon-ac"></span></td>
+                                    <td><span class="dot icon-ac"></span></td>
                                 </tr>
                                 <tr>
                                     <td>Acreditación</td>
@@ -47,8 +47,17 @@
                             </tbody>
                         </table>
                     </div>
-                    <div id="ayuda" class="col-6 col-md-4">
-                        <h4>¡Ayuda!</h4>
+                    <div id="ayuda" class="col-6">
+                        <h6 style="border-bottom: solid 5px green;">Acreditaci&oacute;n</h6>
+                        <p style="text-align: justify">Para aquellos alumnos de la UABC que requieren cambio de unidad o plan de estudios</p>
+                        <h6 style="border-bottom: solid 5px green;">Equivalencia</h6>
+                        <p style="text-align: justify">Para alumnos de otras Instituciones que desean ingresar a la UABC</p>
+                        <h6 style="border-bottom: solid 5px green;">Homologados</h6>
+                        <p style="text-align: justify">Para aquellos alumnos de la UABC que requieren cambio de unidad o plan de estudios</p>
+                        <h6 style="border-bottom: solid 5px green;">Revalidaci&oacute;n</h6>
+                        <p style="text-align: justify">Para alumnos de otras Instituciones que desean ingresar a la UABC</p>
+                        <h6 style="border-bottom: solid 5px green;">Conversión</h6>
+                        <p style="text-align: justify">Para alumnos de otras Instituciones que desean ingresar a la UABC</p>
                     </div
                 </div>
             </div>

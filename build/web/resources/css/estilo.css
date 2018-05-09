@@ -31,7 +31,7 @@ and open the template in the editor.
 #cuerpo{
     /*color: rgb(255, 255, 255);*/
     /*grid-area: main;*/
-    margin-top: 100px;
+    margin-top: 20px;
 }
 #footer{
     /*grid-area: footer;*/
@@ -105,8 +105,8 @@ and open the template in the editor.
     vertical-align: text-top;
 }
 .dot{
-    background-image: url("../img/lapiz.png");
-    background-size: contain;
+    background: var(--bg-grid);
+    background-size: 80px 80px;
     border: solid 2px #8FB339;
     height: 100px;
     width: 100px;
@@ -114,6 +114,12 @@ and open the template in the editor.
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
+}
+.dot.icon-eq{
+    --bg-grid: url("../img/equivalenciaIcon.svg") no-repeat center;
+}
+.dot.icon-ac{
+    --bg-grid: url("../img/lapiz.png") no-repeat center;
 }
 .sombra{
     box-shadow: 0 0 30px 1px #878787;
