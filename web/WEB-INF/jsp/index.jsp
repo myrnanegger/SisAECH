@@ -27,10 +27,10 @@
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><input type="text" id="lbUsr" placeholder="Usuario" required/>@uabc.edu.mx</td>
+                                    <td><input type="text" id="lbUsr" placeholder="Usuario"/>@uabc.edu.mx</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="password" id="lbClv" placeholder="Contrase&ntilde;a" required/></td>
+                                    <td><input type="password" id="lbClv" placeholder="Contrase&ntilde;a"/></td>
                                 </tr>
                                 <tr>
                                     <td style="text-align: center;">
@@ -99,6 +99,7 @@
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
+        alert(""+id_token);
       };
     </script>
 </html>

@@ -39,7 +39,6 @@ made subject to such option by the copyright holder.
 
 Contributor(s):
 -->
-<hibernate-mapping><!-- Modificar para mostrar informaicón de la BD real -->
+<hibernate-mapping><!-- Modificar para mapear BD real-->
   <class name="entidades.Usuario" table="CUSTOMER"/>
-  
 </hibernate-mapping>
