@@ -15,6 +15,7 @@
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <title>UABC :: Inicio Sesión</title>
     </head>
+    
     <body>
         <div id="container">
             <div id="header" class="sticky-top">
@@ -44,7 +45,7 @@
                 <div style="margin: 0 auto;width: 500px;text-align: center;">
                     <br>
                     <p>¿No tienes correo UABC? Ingresa con tu cuenta Google</p>
-                    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
                 </div>
                 <br><br>
                 <div>

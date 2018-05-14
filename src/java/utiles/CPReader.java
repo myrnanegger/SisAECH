@@ -64,7 +64,7 @@ public class CPReader {
     
     public static void main(String[] args){
         CPReader reader = new CPReader();
-        List<Object> obs = reader.getDomicilio(21396);
+        List<Object> obs = reader.getDomicilio(21159);
         List<String> col = (List<String>) obs.get(0);
         String mun = (String) obs.get(1);
         String est = (String) obs.get(2);
