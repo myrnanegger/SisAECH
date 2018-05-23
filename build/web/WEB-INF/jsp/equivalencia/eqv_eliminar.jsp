@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/estilo.css"/>"/>
         <script src="<c:url value="/resources/js/jquery-3.3.1.min.js"/>"></script>
         <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <title>UABC :: Equivalencias</title>
     </head>
     <body>
@@ -29,16 +30,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Solicitud</a>
+                            <a class="nav-link" href="equivalencia.htm">Solicitud</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Generar Proceso</a>
+                            <a class="nav-link" href="eqv_genproc.htm">Generar Proceso</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Eliminar equivalencia</a>
+                            <a class="nav-link" href="eqv_eliminar.htm">Eliminar equivalencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reporte de solicitudes</a>
+                            <a class="nav-link" href="eqv_reporte.htm">Reporte de solicitudes</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,18 +58,34 @@
         </div>
         <div class="container">
             <form>
-                <table style="margin: 0 auto; margin-top: 50px;border-collapse: collapse;">
-                    <tr>
-                        <td style="font-weight: bold;">Folio:</td>
-                        <td><input type="input"/></td>
-                        <td><button class="btn btn-sm btn-outline-secondary" type="button">Buscar</button></td>
-                    </tr>
-                    
+                <br><br><br><br>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-sm">
+                        <thead style="font-weight: bold;">
+                            <tr>
+                                <td><i class="fas fa-trash-alt"></i></td><td>Folio</td><td>Matrícula</td><td>Nombre</td><td>Unidad Procedencia</td><td>Unidad Destino</td>
+                            </tr>                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"/></td><td>111111</td><td>111111</td><td>Nombre Nombre Paterno Materno</td><td>Foraneo1</td><td>Facultad1</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td><td>222222</td><td>222222</td><td>Nombre Paterno Materno</td><td>Foraneo2</td><td>Facultad1</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td><td>333333</td><td>333333</td><td>Nombre Nombre Paterno</td><td>Foraneo3</td><td>Facultad2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br><br>
+                <table>
                     <tbody style="border-radius: 5px;display: block;">
                         <tr>
-                            <td><a class="btn vrd"><span>Aceptar</span></a></td>
-                            <td><a class="btn rjo"><span>Cancelar</span></a></td>
-                            <td><a class="btn azl"><span>Limpiar</span></a></td>
+                            <td><a class="btnf vrd"><span>Aceptar</span></a></td>
+                            <td><a class="btnf rjo"><span>Cancelar</span></a></td>
+                            <td><a class="btnf azl"><span>Limpiar</span></a></td>
                         </tr>
                     </tbody>
                 </table>

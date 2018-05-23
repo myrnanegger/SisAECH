@@ -46,8 +46,8 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:derby://localhost:1527/sample</property>
     <property name="hibernate.connection.username">app</property>
     <property name="hibernate.connection.password">app</property>
-    <mapping resource="../../usuarios.hbm.xml"/>
-    <mapping resource="usuario.hbm.xml"/>
+    <mapping resource="../../usuario.hbm.xml"/>
+    <mapping resource="hibernate/usuario.hbm.xml"/>
     <mapping/>
   </session-factory>
 </hibernate-configuration>

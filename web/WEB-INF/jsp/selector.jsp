@@ -22,7 +22,7 @@
                 <p style="padding-top: 10px;color: #FFF">UNIVERSIDAD AUT&Oacute;NOMA DE BAJA CALIFORNIA</p>
                 <p style="padding: 10px 10px 0 0;color: #000;">
                     <span style="text-align: left;width: 50%;">Sistema de Acreditaciones y Equivalencias</span>
-                    <span style="text-align: right;width: 50%;">-------------Bienvenido(a) Usuario</span>
+                    <span style="text-align: right;width: 50%;">-------------Bienvenido(a) ${message}</span>
                 </p>
             </div>
             <div id="cuerpo">
@@ -63,6 +63,9 @@
             </div>
             <div class="fixed-bottom">
                 &copy; UABC 2018
+                <c:forEach items="${users}" var="user">
+                    <c:out value="${user.usuario}" />
+                </c:forEach>
             </div>
         </div>
     </body>

@@ -29,16 +29,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Solicitud</a>
+                            <a class="nav-link" href="equivalencia.htm">Solicitud</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Generar Proceso</a>
+                            <a class="nav-link" href="eqv_genproc.htm">Generar Proceso</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="eqv_eliminar.htm">Eliminar equivalencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reporte de solicitudes</a>
+                            <a class="nav-link" href="eqv_reporte.htm">Reporte de solicitudes</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -147,9 +147,9 @@
                     <tr style="height: 40px;"></tr>
                     <tbody style="border-radius: 5px;display: block;">
                         <tr>
-                            <td><a class="btn vrd"><span>Aceptar</span></a></td>
-                            <td><a class="btn rjo"><span>Cancelar</span></a></td>
-                            <td><a class="btn azl"><span>Limpiar</span></a></td>
+                            <td><a class="btnf vrd"><span>Aceptar</span></a></td>
+                            <td><a class="btnf rjo"><span>Cancelar</span></a></td>
+                            <td><a class="btnf azl"><span>Limpiar</span></a></td>
                         </tr>
                     </tbody>
                 </table>

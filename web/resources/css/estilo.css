@@ -45,7 +45,7 @@ and open the template in the editor.
     width: 350px;
 }
 /*INI BUTTON*/
-.btn{
+.btnf{
     display: block;
     width: 120px;
     height: 30px;
@@ -53,23 +53,23 @@ and open the template in the editor.
     color: #FFF;
     text-decoration: none;
 }
-.btn span{
+.btnf span{
     position: absolute;
 	top: -999em;
 }
-.btn:hover{
+.btnf:hover{
     cursor: pointer;
     background-position: 0 -30px;
 }
-.btn.vrd{
+.btnf.vrd{
     --btn-color: green;
     --btn-bg: url("../img/btnAceptar.png");
 }
-.btn.rjo{
+.btnf.rjo{
     --btn-color: red;
     --btn-bg: url("../img/btnCancelar.png");
 }
-.btn.azl{
+.btnf.azl{
     --btn-color: blue;
     --btn-bg: url("../img/btnLimpiar.png");
 }
@@ -123,4 +123,13 @@ and open the template in the editor.
 }
 .sombra{
     box-shadow: 0 0 30px 1px #878787;
+}
+.liBtn{
+    border-radius: 5px;
+    color: #FFF;
+    background-color: #F26419;
+    border: none;
+    width: 90px;
+    height: auto;
+    cursor: pointer;
 }

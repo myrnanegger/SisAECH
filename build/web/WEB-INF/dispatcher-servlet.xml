@@ -10,7 +10,7 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
     <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
-
+    <!--<bean class="controladores.UserController" id="userKey" />-->
     <!--
     Most controllers will use the ControllerClassNameHandlerMapping above, but
     for the index controller we are using ParameterizableViewController, so we must
@@ -20,9 +20,11 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
-                <prop key="selector.htm">selectorController</prop>
+                <prop key="selector.htm">userKey</prop>
                 <prop key="equivalencia/equivalencia.htm">equivalenciaController</prop>
                 <prop key="equivalencia/eqv_eliminar.htm">eqvEliminarController</prop>
+                <prop key="equivalencia/eqv_reporte.htm">eqvReporteController</prop>
+                <prop key="equivalencia/eqv_genproc.htm">eqvGenProcController</prop>
             </props>
         </property>
     </bean>
@@ -37,7 +39,7 @@
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
-    <bean name="selectorController"
+    <bean name="userKey"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="selector" />
     <bean name="equivalenciaController"
@@ -46,4 +48,10 @@
     <bean name="eqvEliminarController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="equivalencia/eqv_eliminar" />
+    <bean name="eqvReporteController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="equivalencia/eqv_reporte" />
+    <bean name="eqvGenProcController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="equivalencia/eqv_genproc" />
 </beans>

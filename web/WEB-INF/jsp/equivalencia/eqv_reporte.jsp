@@ -29,16 +29,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Solicitud</a>
+                            <a class="nav-link" href="equivalencia.htm">Solicitud</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Generar Proceso</a>
+                            <a class="nav-link" href="eqv_genproc.htm">Generar Proceso</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Eliminar equivalencia</a>
+                            <a class="nav-link" href="eqv_eliminar.htm">Eliminar equivalencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reporte de solicitudes</a>
+                            <a class="nav-link" href="eqv_reporte.htm">Reporte de solicitudes</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +56,81 @@
             </nav
         </div>
         <div class="container">
-            
+            <div class="table-responsive">
+                <table class="table sombra table-sm">
+                    <tr style="vertical-align: middle;">
+                        <td>Municipio:</td>
+                        <td>
+                            <select>
+                                <option>Todos</option>
+                                <option>Mexicali</option>
+                                <option>Tijuana</option>
+                                <option>Ensenada</option>
+                                <option>Tecate</option>
+                            </select>
+                        </td>
+                        <td style="text-align: right;">Periodo de estudios:</td><td><input type="number" min="0" style="width: 80px"/></td>
+                        <td style="text-align: right;">Ciclo escolar:</td><td><input type="number" min="0" style="width: 80px"/></td>
+                        <td>
+                            <input class="liBtn" type="submit" id="btnSubmit" value="Buscar"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Completo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pendientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Procesadas</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <table class="table table-striped table-hover table-sm">
+                        <thead style="font-weight: bold;">
+                            <tr>
+                                <td>Folio</td><td>Matrícula</td><td>Nombre</td><td>Unidad Procedencia</td><td>Unidad Destino</td>
+                            </tr>                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>111111</td><td>111111</td><td>Nombre Nombre Paterno Materno</td><td>Foraneo1</td><td>Facultad1</td>
+                            </tr>
+                            <tr>
+                                <td>222222</td><td>222222</td><td>Nombre Paterno Materno</td><td>Foraneo2</td><td>Facultad1</td>
+                            </tr>
+                            <tr>
+                                <td>333333</td><td>333333</td><td>Nombre Nombre Paterno</td><td>Foraneo3</td><td>Facultad2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <table class="table table-striped table-hover table-sm">
+                        <thead style="font-weight: bold;">
+                            <tr>
+                                <td>Folio</td><td>Matrícula</td><td>Nombre</td><td>Unidad Procedencia</td><td>Unidad Destino</td>
+                            </tr>                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>444444</td><td>444444</td><td>Nombre Nombre Paterno Materno</td><td>Foraneo1</td><td>Facultad1</td>
+                            </tr>
+                            <tr>
+                                <td>555555</td><td>555555</td><td>Nombre Paterno Materno</td><td>Foraneo2</td><td>Facultad1</td>
+                            </tr>
+                            <tr>
+                                <td>333333</td><td>333333</td><td>Nombre Nombre Paterno</td><td>Foraneo3</td><td>Facultad2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Procesadas</div>
+            </div>
         </div>
     </body>
 </html>

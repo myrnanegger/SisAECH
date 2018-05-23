@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
+import utiles.CPReader;
 
 /**
  *
@@ -19,10 +20,16 @@ public class CPControl extends AbstractController {
     public CPControl() {
     }
     
-    protected ModelAndView handleRequestInternal(
-            HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-        throw new UnsupportedOperationException("Not yet implemented");
+    @Override
+    protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView mv = new ModelAndView("cps");
+        try{
+            CPReader cpr = new CPReader();
+        }catch(Exception ex){
+            
+        }
+        
+        return mv;
     }
     
 }
